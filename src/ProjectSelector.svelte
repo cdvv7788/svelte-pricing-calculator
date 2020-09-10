@@ -16,7 +16,7 @@
 <select
   bind:value={selected}
   on:change={handleSelectChange}
-  class="border border-transparent bg-gray-200 p-4 w-full">
+  class="border border-transparent bg-gray-200 p-4 w-full m-0">
   <option value="" disabled selected>Select a type of project</option>
   {#each projects as project}
     <option value={project.multiplier}>{project.name}</option>
