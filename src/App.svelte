@@ -70,8 +70,16 @@
   }
 </style>
 
-<ProjectSelector {projects} on:message={handleSelector(0)} />
-{#each parameters as parameter, i}
-  <LevelSelector {parameter} on:message={handleSelector(i + 1)} />
-{/each}
-<TotalDisplay total={calculatedTotal} />
+<div class="border">
+  <ProjectSelector {projects} on:message={handleSelector(0)} />
+
+  <div class="grid grid-cols-3 gap-4 text-gray-500">
+    {#each parameters as parameter, i}
+      <LevelSelector {parameter} on:message={handleSelector(i + 1)} />
+    {/each}
+  </div>
+  <hr />
+  <div class="text-center">
+    <TotalDisplay total={calculatedTotal} />
+  </div>
+</div>
