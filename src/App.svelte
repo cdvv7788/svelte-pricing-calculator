@@ -1,6 +1,4 @@
 <script>
-  import { toggle_class } from "svelte/internal";
-
   import LevelSelector from "./LevelSelector.svelte";
   import ProjectSelector from "./ProjectSelector.svelte";
   import TotalDisplay from "./TotalDisplay.svelte";
