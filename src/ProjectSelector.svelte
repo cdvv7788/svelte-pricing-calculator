@@ -15,7 +15,7 @@
 
 <select
   bind:value={selected}
-  on:blur={handleSelectChange}
+  on:change={handleSelectChange}
   class="border border-transparent bg-gray-200 p-4 w-full">
   <option value="" disabled selected>Select a type of project</option>
   {#each projects as project}
