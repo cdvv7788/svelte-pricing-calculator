@@ -65,7 +65,8 @@
 <div class="border">
   <ProjectSelector {projects} on:message={handleSelector(0)} />
 
-  <div class="grid grid-cols-3 gap-4 text-gray-500">
+  <div
+    class={total[0] === 0 ? 'hidden' : 'grid grid-cols-3 gap-4 text-gray-500'}>
     {#each parameters as parameter, i}
       <LevelSelector {parameter} on:message={handleSelector(i + 1)} />
     {/each}
