@@ -64,12 +64,6 @@
   }
 </script>
 
-<style>
-  h1 {
-    color: purple;
-  }
-</style>
-
 <div class="border">
   <ProjectSelector {projects} on:message={handleSelector(0)} />
 

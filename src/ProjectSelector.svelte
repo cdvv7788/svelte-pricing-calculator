@@ -13,16 +13,10 @@
   }
 </script>
 
-<style>
-  select {
-    width: 100%;
-  }
-</style>
-
 <select
   bind:value={selected}
-  on:change={handleSelectChange}
-  class="border border-transparent bg-gray-200 p-4">
+  on:blur={handleSelectChange}
+  class="border border-transparent bg-gray-200 p-4 w-full">
   <option value="" disabled selected>Select a type of project</option>
   {#each projects as project}
     <option value={project.multiplier}>{project.name}</option>
